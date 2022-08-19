@@ -20,29 +20,45 @@ header{
 
 .nav-logo{
     margin-left: 215px;
+    margin-bottom: 25px;
+    margin-top: 24px
 }
 
-.header-list{
-    display:flex;
-
-}
-
-.header-ctcts{
-    display:flex;
-}
-
- /* секція герой */
-
-h1{  
-    font-weight: 900;
+.nav {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 335px;
+    align-items: center;
+  }
+  
+  .nav__list {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 54px;
+  }
+  
+  .group {
+      display: flex;
+      gap: 31px;
+    }
+    
+    
+    
+    
+    /* секція герой */
+    
+    h1{  
+        font-weight: 900;
     font-size: 44px;
     line-height: 60px; 
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-   margin: 0%;
-   padding: 0%;
+    margin: 0%;
+    padding: 0%;
 }
 
 .hero-btn{
@@ -56,6 +72,7 @@ h1{
     display:block;
     margin-left: auto;
     margin-right: auto;
+    background: #2196F3;
 }
 
 .hero-section{
@@ -64,9 +81,50 @@ h1{
     background-color: #2F303A;
 }
 
-.techolojis{
+/* main */
+
+.group-of-pic{
     display: flex;
+    align-content: center;
+    gap: 40px;
 }
 
+.group-of{
+    text-align: center;
+}
+
+.group2 {
+    display: flex;
+    gap: 30px;
+  }
+
+  .container {
+    padding: 0 215px;
+    text-align: center;
+  }
+  
+  .item2 {
+    border: 1px solid black;
+  }
+  .img {
+    width: 100%;
+  }
+  
+  .main_info {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .title {
+    text-align: center;
+    margin: 0 0 50px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 10px;
+  }
 
 

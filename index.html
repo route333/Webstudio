@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-      <a class="nav-logo" href="WebStudio" >WebStudio</a>
-
-         <ul class="header-list">
-         <li><a class="link-nav" href="/" >Студія</a></li>
-         <!-- <li><a class="link-nav" href="https://www.figma.com/file/Eey8YlDaUtmy1rGY69IGSL/Web-Studio_UA-(Copy)?node-id=66737%3A3" >Портофоліо</a></li> -->
-         <li><a class="link-nav" href="kontakty" >Контакти</a></li>
-        </ul>
-         
-        <ul class="header-ctcts">
-         <li><a class="link-nav" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-         <li><a class="link-nav" href=tel:+380961111111 >+38 096 111 11 11</a></a></li>
-        </ul>
-    </header>
+    <header> 
+        <a class="nav-logo" href="WebStudio" >WebStudio</a>
+    <nav class="nav">     
+            <ul class="nav__list">
+                <li><a class="nav-item" href="/" >Студія</a></li>
+                <li><a class="nav-item" href="https://www.figma.com/file/Eey8YlDaUtmy1rGY69IGSL/Web-Studio_UA-(Copy)?node-id=66737%3A3" >Портофоліо</a></li>
+                <li><a class="nav-item" href="kontakty" >Контакти</a></li>
+            </ul>
+            <ul class="group">
+                <li><a class="nav-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+                <li><a class="nav-link" href=tel:+380961111111 >+38 096 111 11 11</a></a></li>
+            </ul>
+    </nav>
+</header>
 
     <main>
 <!--секція герой-->
@@ -33,53 +33,83 @@
             <button class="hero-btn" type="button" >Замовити послугу</button>
     </section>
 <!-- Чому ми? -->
-             <section class="text">
+             <section>
+<nav class="text">
 
-    
-
-        <ul>
-        <li class="item">
-            <h3 class="title-why-we-item">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Voluptatem veritatis exercitationem velit magnam iure.</p>
+       <ul>
+           <li>
+            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                   Voluptatem veritatis exercitationem velit magnam iure.</p>
           </li>
-          <li class="item">
-           <h3 class="title-why-we-item">ПунктуальнІсть</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <li>
+              <h3 c>ПунктуальнІсть</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatem veritatis exercitationem velit magnam iure.</p>
+          </li>
+          <li>
+           <h3 c>ПЛАНУВАННЯ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
              Voluptatem veritatis exercitationem velit magnam iure.</p>
-          </li>
-          <li class="item">
-           <h3 class="title-why-we-item">ПЛАНУВАННЯ</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Voluptatem veritatis exercitationem velit magnam iure.</p>
-          </li>
-          <li class="item">
-          <h3 class="title-why-we-item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Voluptatem veritatis exercitationem velit magnam iure.</p>
-          </li>
-        </ul>
+            </li>
+            <li>
+            <h3 c>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatem veritatis exercitationem velit magnam iure.</p>
+                </li>
+      </ul>
+      </nav>
+    </section>
+</nav>
        <!-- Чим ми займаємося -->
-        <section class=techolojis>
-
-          <h2>Чим ми займаємося</h2>
-         <ul>
-         <li class="item"><img src="./img/img.png" alt="img"></li>
-         <li class="item"><img src="./img/img3.png" alt="img"></li>
-         <li class="item"><img src="./img/img4.png" alt="img"></li>
-         </ul>
-        </section>
-
-        <sectionc lass="text3">
-        <!-- учасники нашої команди -->
-         <h2>Наша команда</h2>
-
-         <ul>
-        <li><img src="./img/img (1).png" alt="img"> <h3>Ігор Дем’яненко</h3> <p>Product Designer</p></li>
-        <li><img src="./img/img (2).png" alt="img"> <h3>Ольга Репіна</h3> <p>Frontend Developer</p></li>
-        <li><img src="./img/img (3).png" alt="img"> <h3>Микола Тарасов</h3> <p>Marketing</p></li>
-        <li><img src="./img/img (4).png" alt="img"> <h3>Михайло Єрмаков</h3> <p>UI Designer</p></li>
+        <section>
+        <h2 class="group-of">Чим ми займаємося</h2>
+        <ul class="group-of-pic">
+            <li class="item"><img src="./img/img.png" alt="img"></li>
+            <li class="item"><img src="./img/img3.png" alt="img"></li>
+            <li class="item"><img src="./img/img4.png" alt="img"></li>
         </ul>
+    </section>
+
+        <section>
+        <!-- учасники нашої команди -->
+
+            <nav class="container">
+            <h2>Наша Команда</h2>
+
+                <div class="group2">
+                  <div class="item2">
+                    <img class="img" src="./img/img (1).png" alt="aaa">
+                    <div class="main_info">
+                      <div class="name">Ігор Дем’яненко</div>
+                      <div class="position">Product Designer</div>
+                    </div>
+                  </div>
+
+                  <div class="item2">
+                    <img class="img" src="./img/img (2).png" alt="aaa">
+                    <div class="main_info">
+                      <div class="name">Ольга Репіна</div>
+                      <div class="position">Frontend Developer</div>
+                    </div>
+                  </div>
+        
+                  <div class="item2">
+                    <img class="img" src="./img/img (3).png" alt="aaa">
+                    <div class="main_info">
+                      <div class="name">Микола Тарасов</div>
+                      <div class="position">Marketing</div>
+                    </div>
+                  </div>
+
+                  <div class="item2">
+                    <img class="img" src="./img/img (4).png" alt="aaa">
+                    <div class="main_info">
+                      <div class="name">Михайло Єрмаков</div>
+                      <div class="position">UI Designer</div>
+                    </div>
+                  </div>
+
 
         </section>
 
