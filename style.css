@@ -85,7 +85,7 @@ header{
 
 .group-of-pic{
     display: flex;
-    align-content: center;
+    
     gap: 40px;
 }
 
@@ -127,4 +127,8 @@ header{
     margin: 0 0 10px;
   }
 
+.text{
+  display: flex;
+  align-items: center;
+}
 
