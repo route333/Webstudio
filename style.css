@@ -4,6 +4,7 @@ body{
 
 ul{
     list-style: none;
+    padding: 0%;
 }
 
 a{
@@ -18,10 +19,46 @@ header{
     align-items: center;
 }
 
-.nav-logo{
-    margin-left: 215px;
+.web-studio-header{
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+  margin-left: 215px;
     margin-bottom: 25px;
     margin-top: 24px
+}
+
+.web{
+color: #2196F3;
+  margin-left: 215px;
+    margin-bottom: 25px;
+    margin-top: 24px;
+    font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+}
+
+.studio{
+color:#0000;
+  margin-left: 215px;
+    margin-bottom: 25px;
+    margin-top: 24px;
+    font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+}
+
+.nav-item{
+  color: #212121;
+  font-weight: 500;
+letter-spacing: 0.02em;
+}
+
+.nav-link{
+  color: #757575;
 }
 
 .nav {
@@ -85,8 +122,9 @@ header{
 
 .group-of-pic{
     display: flex;
-    
+    padding: 0%;
     gap: 40px;
+    justify-content: center;
 }
 
 .group-of{
@@ -130,5 +168,20 @@ header{
 .text{
   display: flex;
   align-items: center;
+  gap: 30px;
+  padding-left: 215px;
+  padding-right: 214px;
 }
 
+.item{
+  color: #757575;
+}
+
+/* footer */
+footer{
+  background: #2F303A;
+  width: 1600px;
+height: 252px;
+left: 0px;
+top: 209px;
+}
