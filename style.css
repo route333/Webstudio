@@ -114,6 +114,8 @@ letter-spacing: 0.02em;
     padding: 0%;
     gap: 40px;
     justify-content: center;
+    padding-left: 215px;
+    padding-right: 140px;
 }
 
 .group-of{
