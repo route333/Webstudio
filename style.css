@@ -126,14 +126,15 @@ letter-spacing: 0.02em;
   }
 
   .container {
-    padding: 0 215px;
+    padding-top: 80px;
+   padding-left: 215px;
+   padding-right: 215px;
     text-align: center;
     width: 1600px;
+    background: #F5F4FA;
 height: 648px;
 left: 0px;
 top: 1449px;
-
-background: #F5F4FA;
   }
   
   .item2 {
