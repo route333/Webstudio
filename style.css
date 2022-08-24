@@ -19,22 +19,15 @@ header{
     align-items: center;
 }
 
-.web-studio-header{
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: 0.03em;
-  margin-left: 215px;
-    margin-bottom: 25px;
-    margin-top: 24px
-}
-
-.web{
-color: #2196F3;
+.dv{
   margin-left: 215px;
     margin-bottom: 25px;
     margin-top: 24px;
     font-weight: 700;
+}
+
+.web{
+color: #2196F3;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
@@ -42,10 +35,6 @@ letter-spacing: 0.03em;
 
 .studio{
 color:#0000;
-  margin-left: 215px;
-    margin-bottom: 25px;
-    margin-top: 24px;
-    font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
@@ -139,6 +128,12 @@ letter-spacing: 0.02em;
   .container {
     padding: 0 215px;
     text-align: center;
+    width: 1600px;
+height: 648px;
+left: 0px;
+top: 1449px;
+
+background: #F5F4FA;
   }
   
   .item2 {
@@ -185,3 +180,16 @@ height: 252px;
 left: 0px;
 top: 209px;
 }
+
+.div{
+  margin-left: 215px;
+  margin-top: 60px;
+  display:block;
+}
+ .clr{
+  color: #757575;
+ }
+
+ .pp{
+  color: #FFFFFF;
+ }
