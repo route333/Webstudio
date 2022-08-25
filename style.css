@@ -25,22 +25,28 @@ header{
     margin-top: 24px;
     font-weight: 700;
     font-family: 'Raleway';
+    font-size: 26px;
+   
 }
 
 .web{
 color: #2196F3;
-font-size: 26px;
+font-family: 'Raleway';
 line-height: 31px;
-letter-spacing: 0.03em;
-
+   letter-spacing: 0.03em;
+   font-size: 26px;
+   line-height: 31px;
+   letter-spacing: 0.03em;
 }
 
 .studio{
 color:#0000;
-font-size: 26px;
+font-family: 'Raleway';
 line-height: 31px;
-letter-spacing: 0.03em;
-
+   letter-spacing: 0.03em;
+   font-size: 26px;
+   line-height: 31px;
+   letter-spacing: 0.03em;
 }
 
 .nav-item{
@@ -128,9 +134,9 @@ letter-spacing: 0.02em;
 .group2 {
     display: flex;
     gap: 30px;
-  }
+}
 
-  .container {
+ .container {
     padding-top: 80px;
    padding-left: 215px;
    padding-right: 215px;
@@ -143,7 +149,9 @@ top: 1449px;
   }
   
   .item2 {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   }
   .img {
     width: 100%;
@@ -154,6 +162,10 @@ top: 1449px;
     padding: 30px 0;
   }
   
+  .title {
+    text-align: center;
+    margin: 0 0 50px;
+  }
   
   .name {
     font-weight: bold;
@@ -161,7 +173,7 @@ top: 1449px;
     line-height: 19px;
     margin: 0 0 10px;
   }
-
+   
 .position{
   color: #757575;
 }
@@ -201,6 +213,5 @@ top: 209px;
  }
 
  .footer-mail{
-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
  }
-
