@@ -12,6 +12,10 @@ a{
 }
 
 
+.container{
+display: flex;
+}
+
 
 /* header */
 header{
@@ -123,12 +127,13 @@ letter-spacing: 0.02em;
     padding: 0%;
     gap: 40px;
     justify-content: center;
-    padding-left: 215px;
+    padding-left: 180px;
     padding-right: 140px;
 }
 
 .group-of{
-    text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .group2 {
@@ -136,7 +141,7 @@ letter-spacing: 0.02em;
     gap: 30px;
 }
 
- .container {
+ .ns-cmd {
     padding-top: 80px;
    padding-left: 215px;
    padding-right: 215px;
