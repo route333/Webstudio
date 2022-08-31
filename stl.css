@@ -13,7 +13,6 @@ a{
 }
 
 
-
 /* header */
 header{
     display:flex;
@@ -85,7 +84,7 @@ letter-spacing: 0.02em;
   display: flex;
 }
 /* main */
-.container {
+.mn{
 width: 370px;
 height: 404px;
 left: 215px;
