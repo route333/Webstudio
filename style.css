@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Roboto';
 }
@@ -138,7 +139,10 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2F303A;
+
+    background-image: url(img/Imgsss.png);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     height: 600px;
@@ -175,6 +179,7 @@ a{
     font-size: 16px;
     line-height: 30px;
 }
+
 
 /* main */
 
@@ -244,6 +249,8 @@ a{
   display: flex;
   flex-direction: row;
   gap: 30px;
+  justify-content: center;
+  padding: 0 215px;
 }
 
 .particular__description {
@@ -254,6 +261,18 @@ a{
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.img-text-container {
+  background-color:  #F5F4FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.img-text{
+  justify-content: center;
 }
 
 
