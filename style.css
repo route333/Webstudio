@@ -105,7 +105,7 @@ a{
     /* секція герой */
     
     h1{  
-        font-weight: 900;
+    font-weight: 900;
     font-size: 44px;
     line-height: 60px; 
     text-align: center;
@@ -200,11 +200,6 @@ a{
   width: 100%;
 }
 
-.group2 {
-  display: flex;
-  gap: 30px;
-}
-
 .ns-cmd {
   padding-top: 80px;
   text-align: center;
@@ -212,7 +207,13 @@ a{
   height: 648px;
   top: 1449px;
 }
-  
+
+.group2 {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
   .item2 {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -223,25 +224,33 @@ a{
     width: 100%;
   }
   
-  .main_info {
-    text-align: center;
-    padding: 30px 0;
-  }
   
   .title {
     text-align: center;
     margin: 0 0 50px;
   }
   
-  .name {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    margin: 0 0 10px;
-  }
-   
+  .main_info {
+  padding: 10px 0;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 0 10px;
+}
+
 .position{
   color: #757575;
+  padding: 0 0 32px;
+}
+
+.network-list{
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 0 0 42px;
 }
 
 .particular__list {
