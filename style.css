@@ -132,36 +132,24 @@ a{
 
 
 .hero-section {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background-image: url(img/Imgsss.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/Imgsss.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 600px;
-}
-
-.hero-section:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-section__main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     z-index: 2;
 }
 
@@ -187,8 +175,6 @@ a{
     padding: 0%;
     gap: 30px;
     justify-content: center;
-    /* padding-left: 180px;
-    padding-right: 140px; */
 }
 
 .group-of{
@@ -271,12 +257,35 @@ a{
   color: #757575;
 }
 
-.img-text-container {
-  background-color:  #F5F4FA;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
+.particular__item::before{
+display: block;
+content: "";
+height: 120px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+background-color: #F5F4FA;
+margin-bottom: 30px;
+}
+
+.particular__item:nth-child(1)::before{
+background-image: url(./img/antenna\ 1еее.png);
+background-size: 70px 70px;
+}
+
+.particular__item:nth-child(2)::before{
+background-image: url(./img/clock\ 1ввв.png);
+background-size: 70px 70px;
+}
+
+.particular__item:nth-child(3)::before{
+background-image: url(./img/diagram\ 1ннн.png);
+background-size: 70px 70px;
+}
+
+.particular__item:nth-child(4)::before{
+background-image: url(./img/astronaut\ 1.png);
+background-size: 70px 70px;
 }
 
 .img-text{
