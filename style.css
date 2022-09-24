@@ -1,6 +1,8 @@
 
 body{
     font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
 }
 
 ul{
@@ -14,7 +16,6 @@ a{
 
 
 .container{
-  padding: 0 215px;
 }
 
 .header {
@@ -192,6 +193,7 @@ a{
   background-color: #F5F4FA;
   height: 648px;
   top: 1449px;
+  padding: 0 215px;
 }
 
 .group2 {
@@ -303,6 +305,7 @@ footer{
   height: 252px;
   left: 0px;
   top: 209px;
+  padding: 0 215px;
 }
 
 .footer__logo {
