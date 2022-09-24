@@ -2,7 +2,6 @@
 body{
     font-family: 'Roboto';
     padding: 0;
-    margin: 0;
 }
 
 ul{
@@ -12,6 +11,10 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+h1,h3,h2,p{
+   margin: 0;
 }
 
 
@@ -176,6 +179,7 @@ a{
     padding: 0%;
     gap: 30px;
     justify-content: center;
+    padding-bottom: 94px;
 }
 
 .group-of{
@@ -187,13 +191,31 @@ a{
   width: 100%;
 }
 
+.section-title{
+  font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 50px;
+}
+
+.group-title{
+  padding-top: 94px ;
+}
+
 .ns-cmd {
   padding-top: 80px;
   text-align: center;
-  background-color: #F5F4FA;
   height: 648px;
   top: 1449px;
   padding: 0 215px;
+}
+
+.team-section{
+  padding-bottom: 94px;
+  background-color: #F5F4FA;
 }
 
 .group2 {
@@ -241,6 +263,11 @@ a{
   padding: 0 0 42px;
 }
 
+.particular-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .particular__list {
   display: flex;
   flex-direction: row;
@@ -257,6 +284,11 @@ a{
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
+}
+
+.particular__item{
+  width: 270px;
 }
 
 .particular__item::before{
@@ -321,11 +353,6 @@ footer{
   color: #2196F3;
 }
 
-.div{
-  margin-left: 215px;
-  padding-top: 60px;
-  display:block;
-}
  .clr{
   color: rgba(255, 255, 255, 0.6);
  }
