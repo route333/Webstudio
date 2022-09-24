@@ -136,15 +136,9 @@ h1,h3,h2,p{
 
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/Imgsss.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
     width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -273,7 +267,6 @@ margin-bottom: 50px;
   flex-direction: row;
   gap: 30px;
   justify-content: center;
-  padding: 0 215px;
 }
 
 .particular__description {
