@@ -260,9 +260,8 @@ margin-bottom: 50px;
 }
 
 .networks svg{
-  transition: all 1s cubic-bezier(.92,1.44,1,-0.98);
+  transition: all 0,2s cubic-bezier(.92,1.44,1,-0.98);
   fill: #AFB1B8;
-  background-color: url(./img/Ellipse.svg);
 }
 
 .networks:hover svg{
@@ -350,7 +349,7 @@ background-size: 70px 70px;
 footer{
   display: flex;
   gap:75px;
-  /* align-self: start; */
+  align-self: start;
   background: #2F303A;
   height: 252px;
   left: 0px;
