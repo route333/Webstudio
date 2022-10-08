@@ -103,10 +103,6 @@ h1,h3,h2,p{
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-
-    
-    /* секція герой */
     
     h1{  
     font-weight: 900;
@@ -166,9 +162,6 @@ h1,h3,h2,p{
     font-size: 16px;
     line-height: 30px;
 }
-
-
-/* main */
 
 .group-of-pic{
     display: flex;
@@ -260,7 +253,7 @@ margin-bottom: 50px;
 }
 
 .networks svg{
-  transition: all 0,2s cubic-bezier(.92,1.44,1,-0.98);
+  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
   fill: #AFB1B8;
 }
 
@@ -269,7 +262,7 @@ margin-bottom: 50px;
 }
 
 .networks svg .icon-background{
-  transition: all 1s cubic-bezier(.92,1.44,1,-0.98);
+  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
   fill: rgba(255, 255, 255, 0.1);;
 }
 
@@ -345,7 +338,7 @@ background-size: 70px 70px;
   color: #757575;
 }
 
-/* footer */
+
 footer{
   display: flex;
   gap:75px;
