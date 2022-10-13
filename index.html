@@ -54,40 +54,40 @@
             <button class="hero-section__btn" type="button" data-open-modal>Замовити послугу</button>
           <div class="backdrop is-hidden" data-backdrop>
             <div  class="modal">
-              <button class="modal__btn" data-close-modal>Закрити</button>
-              <h2 class="modal__h">Залиште свої дані,ми Вам зателефонуємо</h2>
-              <ul class="modal__list">
-                <li>
-                  <label>
-                    <p class="modal__text">Ім'я</p>
-                    <input class="modal__input" type="text">
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <p class="modal__text">Телефон</p>
-                    <input class="modal__input" type="text">
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <p class="modal__text">Пошта</p>
-                    <input class="modal__input" type="text">
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <p class="modal__text">Коментарі</p>
-                    <input class="modal-input" type="text" placeholder="Введіть текст">
-                  </label>
-                </li>
-                <li>
-                  <label class="modal__checkbox">
-                    <input type="checkbox">
-                    <p class="checkbox">Погоджуюсь з розсилкою і приймаю <a href=".">Умови договору</a></p>
-                  </label>
-                </li>
-              </ul>
+              <button class="modal__btn"  data-close-modal><img src="./img/close.svg" alt="close"></button>
+               <h2 class="modal__h">Залиште свої дані,ми Вам зателефонуємо</h2>
+                <ul class="modal__list">
+                  <li>
+                    <label>
+                      <p class="modal__text">Ім'я</p>
+                      <input class="modal__input" type="text">
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <p class="modal__text">Телефон</p>
+                      <input class="modal__input"  type="text">
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <p class="modal__text">Пошта</p>
+                      <input class="modal__input"  type="text">
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <p class="modal__text">Коментарі</p>
+                      <input class="modal__text__input" type="text" placeholder="Введіть текст" >
+                    </label>
+                  </li>
+                  <li>
+                    <label class="modal__checkbox">
+                      <input class="checkbox" type="checkbox" style="transform:scale(1.3);"/>
+                      <p class="checkbox">Погоджуюсь з розсилкою і приймаю <a href=".">Умови договору</a></p>
+                    </label>
+                  </li>
+                </ul>
               <button class="modal__button">Надіслати</button>
             </div>
           </div>
@@ -127,11 +127,20 @@
        <!-- Чим ми займаємося -->
     <section class="container">
         <h2 class="section-title group-of">Чим ми займаємося</h2>
-        <ul class="group-of-pic">
-          <li><img class="test__img" src="./img/img.png" alt="img"></li>
-          <li><img class="test__img" src="./img/img3.png" alt="img"></li>
-          <li><img class="test__img" src="./img/img4.png" alt="img"></li>
-        </ul>
+        <div class="group-of-pic">
+          <div class="text__pic">
+            <img class="test__img" src="./img/img.png" alt="img">
+             <p class="pic__p">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+            </div>
+          <div class="text__pic">
+            <img class="test__img" src="./img/img3.png" alt="img">
+            <p class="pic__p">МОБІЛЬНІ ЗАСТОСУНКИ</p>
+          </div>
+          <div class="text__pic">
+            <img class="test__img" src="./img/img4.png" alt="img">
+            <p class="pic__p">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+          </div>
+        </div>
     </section>
 
     <!-- учасники нашої команди -->
