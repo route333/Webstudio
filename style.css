@@ -490,7 +490,40 @@ background-size: 70px 70px;
 .item{
   color: #757575;
 }
+.clientage__section{
+  margin: 0;
+  display: flex;
+  padding-top: 94px;
+}
 
+
+.postijni-klientu{                
+  text-align: center;
+  color: #212121;
+}
+
+.clientage{
+  gap: 30px;
+  justify-content: center;
+}
+
+.clientage__item{
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  height: 90px;
+  width: 170px;
+}
+
+.clientage__svg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.clientage__item:hover{
+  fill: #2196F3;
+}
 
 footer{
   display: flex;
