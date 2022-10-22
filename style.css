@@ -565,15 +565,11 @@ background-size: 70px 70px;
 }
 
 footer{
-  display: flex;
   gap:75px;
   align-self: start;
   background: #2F303A;
-  height: 252px;
-  left: 0px;
-  top: 209px;
-  padding: 0 215px;
-  list-style: none;
+  display: flex;
+  padding-left: 215px;
 }
 
 .footer__logo {
