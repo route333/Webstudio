@@ -198,18 +198,14 @@ h1,h3,h2,p{
 .technokriak__p:hover{
    opacity: 1;
 }
-
-  .mn{
-  width: 370px;
-  height: 404px;
-  align-items: center;
-  margin-left:260px ;
-  }
   
-  .item2 {
+  .posters-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
   .img {
     width: 100%;
   }
