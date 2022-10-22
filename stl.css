@@ -31,13 +31,6 @@ h1,h3,h2,p{
    margin: 0;
 }
 
-
-.container{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .header {
   padding: 24px 20px;
   display: flex;
@@ -162,6 +155,8 @@ h1,h3,h2,p{
 
 .technokriak{
   position: relative;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
 }
 
 .technokriak::before{
@@ -171,7 +166,7 @@ h1,h3,h2,p{
     display: block ;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 70%;
     opacity: 0;
 }
 
@@ -195,7 +190,7 @@ h1,h3,h2,p{
     letter-spacing: 0.03em;
     width: 310px;
     height: 168px;
-    bottom: 20%;
+    bottom: 45%;
     left: 5%;
     opacity: 0;
 }
@@ -207,15 +202,13 @@ h1,h3,h2,p{
   .mn{
   width: 370px;
   height: 404px;
-  display: flex;
-  gap: 30px;
   align-items: center;
   margin-left:260px ;
   }
   
   .item2 {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    display: flex;
+    gap: 30px;
   }
   .img {
     width: 100%;
