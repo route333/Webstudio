@@ -136,7 +136,7 @@ h1,h3,h2,p{
 
 
     /* hero */
-.hero-btn{
+.hero__btn{
     margin-top: 165px;
     background: #F5F4FA;
     border-radius: 4px ;
@@ -144,26 +144,26 @@ h1,h3,h2,p{
     border-color: currentColor;
 }
 
-.hero-btn:hover{
+.hero__btn:hover{
   background-color: #2196F3;
   color: #EEEEEE;
   border-color: #2196F3;
 }
 
-.hero-ul{
+.hero__list{
   justify-content: center;
   gap: 8px;
   display: flex;
   } 
   /* main */
 
-.technokriak{
+.posters__item{
   position: relative;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
 
-.technokriak::before{
+.posters__item::before{
     color: #FFFFFF;
     background: rgba(33, 150, 243, 0.9);
     content: "" ;
@@ -174,16 +174,16 @@ h1,h3,h2,p{
     opacity: 0;
 }
 
-.technokriak:hover::before{
+.posters__item:hover::before{
   opacity: 1;
   fill: url(cubic-bezier(0,.99,1,.32));
 }
 
-.technokriak__p{
+.posters__hvr{
    position: relative;
 }
 
-.technokriak__p{
+.posters__hvr{
     right: 25%;
     color: #FFFFFF ;
     position: absolute;
@@ -200,30 +200,30 @@ h1,h3,h2,p{
     opacity: 0;
 }
 
-.technokriak__p:hover{
+.posters__hvr:hover{
    opacity: 1;
 }
   
-  .posters-list {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 24px;
-    margin-top: 34px;
-  }
+.posters-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
+  margin-top: 34px;
+}
 
-  .img {
-    width: 100%;
-  }
+.posters__img {
+  width: 100%;
+}
   
-  .name {
-   margin-top: 20px;
-   margin-left: 24px;
-   width: 322px;
-  }
+.posters__name {
+  margin-top: 20px;
+  margin-left: 24px;
+  width: 322px;
+}
    
-.position{
+.posters__position{
   margin-top: 15px;
   color: #757575;
   margin-left: 24px;

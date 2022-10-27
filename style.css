@@ -17,17 +17,12 @@ h1,h3,h2,p{
    margin: 0;
 }
 
-
-.container{
-}
-
 .header {
   padding: 24px 20px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-
 
 .header__main {
   display: flex;
@@ -266,11 +261,6 @@ h1,h3,h2,p{
  border-radius: 4px;
 }
 
-.modal-input:hover{
-  border: 1px solid #2196F3;
-  border-radius: 4px;
-}
-
 .modal-input{
   width: 448px;
   height: 120px;
@@ -296,7 +286,7 @@ h1,h3,h2,p{
   color: #757575;
 }
 
-.hero-section {
+.hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/Imgsss.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -305,18 +295,18 @@ h1,h3,h2,p{
     padding-bottom: 200px;
 }
 
-.hero-section__main {
+.hero__main {
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 2;
 }
 
-.hero-section__title {
+.hero__title {
     margin: 0 0 30px;
 }
 
-.hero-section__btn {
+.hero__btn {
     background: #2196F3;
     color: white;
     padding: 10px 24px;
@@ -326,7 +316,7 @@ h1,h3,h2,p{
     line-height: 30px;
 }
 
-.group-of-pic{
+.pic__group{
     display: flex;
     padding: 0%;
     gap: 30px;
@@ -334,20 +324,20 @@ h1,h3,h2,p{
     padding-bottom: 94px;
 }
 
-.group-of{
+.group__of{
   display: flex;
   justify-content: center;
 }
 
-.test__img {
+.pic__img {
   width: 100%;
 }
 
-.text__pic{
+.pic__list{
   position: relative;
 }
 
-.text__pic::before{
+.pic__list::before{
     content: "" ;
     display: block ;
     background-color: rgba(47, 48, 58, 0.8);;
@@ -359,7 +349,7 @@ h1,h3,h2,p{
     opacity: 1;
 }
 
-.pic__p{
+.pic__text{
     right: 25%;
     color: #FFFFFF ;
     position: absolute;
@@ -367,7 +357,7 @@ h1,h3,h2,p{
     opacity: 1;
 }
 
-.section-title{
+.team__title{
   font-weight: 700;
 font-size: 36px;
 line-height: 42px;
@@ -375,13 +365,10 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 margin-bottom: 50px;
+padding-top: 94px ;
 }
 
-.group-title{
-  padding-top: 94px ;
-}
-
-.ns-cmd {
+.team__members {
   padding-top: 80px;
   text-align: center;
   height: 648px;
@@ -389,71 +376,68 @@ margin-bottom: 50px;
   padding: 0 215px;
 }
 
-.team-section{
+.team__section{
   padding-bottom: 94px;
   background-color: #F5F4FA;
 }
 
-.group2 {
+.team__group {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-  .item2 {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-
-  .img {
-    width: 100%;
-  }
-  
-  
-  .title {
-    text-align: center;
-    margin: 0 0 50px;
-  }
-  
-  .main_info {
-  padding: 10px 0;
+.team__list {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.name {
+.team__img {
+  width: 100%;
+}
+
+
+.title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.team__name {
+  padding: 10px 0;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   margin: 0 0 10px;
 }
 
-.position{
+.team__position{
   color: #757575;
   padding: 0 0 32px;
 }
 
-.network-list{
+.team__network-list{
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 0 0 32px;
 }
 
-.networks svg{
+.team__networks svg{
   transition: all 1s cubic-bezier(0,-0.55,1,1.88);
   fill: #AFB1B8;
 }
 
-.networks:hover svg{
+.team__networks:hover svg{
   fill:#FFFFFF;
 }
 
-.networks svg .icon-background{
+.team__networks svg .icon-background{
   transition: all 1s cubic-bezier(0,-0.55,1,1.88);
   fill: rgba(255, 255, 255, 0.1);;
 }
 
-.networks:hover svg .icon-background{
+.team__networks:hover svg .icon-background{
   fill:#2196F3;
 }
 
