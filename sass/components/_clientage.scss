@@ -1,0 +1,38 @@
+.clientage__list{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clientage{ 
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clientage__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #212121;
+  padding-bottom: 50px;
+}
+
+.clientage__item{
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  height: 90px;
+  width: 170px;
+}
+
+.clientage__svg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.clientage__item:hover{
+  fill: #2196F3;
+}

@@ -1,0 +1,19 @@
+.hero__btn{
+    margin-top: 165px;
+    background: #F5F4FA;
+    border-radius: 4px ;
+    height: 30px;
+    border-color: currentColor;
+}
+
+.hero__btn:hover{
+  background-color: #2196F3;
+  color: #EEEEEE;
+  border-color: #2196F3;
+}
+
+.hero__list{
+  justify-content: center;
+  gap: 8px;
+  display: flex;
+  } 

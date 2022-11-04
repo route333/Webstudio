@@ -1,0 +1,57 @@
+.particular{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.particular__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.particular__description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 10px;
+}
+
+.particular__item{
+  width: 270px;
+}
+
+.particular__item::before{
+display: block;
+content: "";
+height: 120px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+background-color: #F5F4FA;
+margin-bottom: 30px;
+}
+
+.particular__item:nth-child(1)::before{
+background-image: url(./img/antenna\ 1еее.png);
+background-size: 70px 70px;
+}
+
+.particular__item:nth-child(2)::before{
+background-image: url(./img/clock\ 1ввв.png);
+background-size: 70px 70px;
+}
+
+.particular__item:nth-child(3)::before{
+background-image: url(./img/diagram\ 1ннн.png);
+background-size: 70px 70px;
+}
+
+.particular__item:nth-child(4)::before{
+background-image: url(./img/astronaut\ 1.png);
+background-size: 70px 70px;
+}
