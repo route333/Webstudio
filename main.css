@@ -634,8 +634,12 @@ h1 {
 }
 
 .pic__title {
-  display: flex;
-  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #212121;
+  padding-bottom: 50px;
 }
 
 .pic__img {
