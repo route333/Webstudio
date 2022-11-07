@@ -644,6 +644,7 @@ h1 {
 
 .pic__img {
   width: 100%;
+  max-width: 100%;
 }
 
 .pic__list {
