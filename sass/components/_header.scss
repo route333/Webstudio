@@ -193,3 +193,18 @@
 .header__link:hover{
   color: #2196F3;
 }
+
+.header__networks{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.02em;
+
+  color: #2196F3;
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+  margin-top: 64px;
+  }
