@@ -7,7 +7,7 @@
     <title>WebStudio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./main.css" type="text/css">
+    <link rel="stylesheet" href="./sass/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header container">
       
         <div class="header__main">
           <a href="index.html" class="header__logo">
@@ -44,11 +44,34 @@
             <a class="contacts__link" href=tel:+380961111111 >+38 096 111 11 11</a>
           </div>
       </div>
+  <nav class="header__nav">
+            
+            <button data-menu-button class="header__btn" type="button">
+            <svg class="header__icon">
+                <use class="header__icon-menu" href="./img/sprite.svg#menu"></use>
+                <use class="header__icon-cross" href="./img/sprite.svg#cross"></use>
+            </svg>
+            </button>
+
+        <div data-menu class="header__pages">
+          <ul>
+            <li class="header__page"><a class="header__titles" href="#">Студія</a></li>
+            <li class="header__page"><a class="header__titles" href="./portfolio.html">Портфоліо</a></li>
+            <li class="header__page"><a class="header__titles" href="#">Контакти</a></li>
+          </ul>
+            
+           <ul class="header__links">
+             <li><a class="header__link" href=tel:+380961111111 >+38 096 111 11 11</a></li>
+            <li><a class="header__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+           </ul>
+        </div>
+
+       </nav>
     </header>
     
     <main>
       <!--секція герой-->
-    <section class="hero">
+    <section class="hero container">
         <div class="hero__main">
             <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
             <button class="hero__btn" type="button" data-open-modal>Замовити послугу</button>
@@ -96,7 +119,7 @@
           </div>
     </section>
 <!-- Чому ми? -->
-<section class="particular">
+<section class="particular container">
   <ul class="particular__list">
       <li class="particular__item">
       <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -126,7 +149,7 @@
 </nav>
 </section>
        <!-- Чим ми займаємося -->
-    <section class="pic">
+    <section class="pic container">
         <h2 class="section__title pic__title">Чим ми займаємося</h2>
       <div class="pic__group">
           <div class="pic__list">
@@ -145,7 +168,7 @@
     </section>
 
     <!-- учасники нашої команди -->
-        <section class="team">
+        <section class="team container">
 
         <div class="team__members">
           <h2 class="team__title">Наша Команда</h2>
@@ -380,7 +403,7 @@
                 
               </section>
 
-              <section class="clientage">
+              <section class="clientage container">
                 <h2 class="clientage__title">Постійні Клієнти</h2>
                 <ul class="clientage__list">
                <li class="clientage__item"><img class="clientage__svg" src="./img/logo 1.svg" alt="d"></li>
@@ -471,26 +494,9 @@
        
   </footer>
 
- <script>
-      const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
+  <script src="./js/mobile-menu.js"></script>
 
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-        console.log("Це клік в бекдроп");
-      }
-    </script>
+  <script src="./js/hero-js"></script>
 
 
       
