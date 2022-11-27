@@ -394,7 +394,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .modal__btn {
-    margin-left: 90%;
+    margin-left: 89%;
   }
 }
 
