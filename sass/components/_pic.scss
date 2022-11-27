@@ -4,15 +4,17 @@
     gap: 30px;
     justify-content: center;
     padding-bottom: 94px;
-
+    display: none;
     @media screen and (max-width: 768px) {
       display: none;
     }
+
 }
 
 .pic__title{
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 .pic__img {

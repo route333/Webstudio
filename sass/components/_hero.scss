@@ -10,22 +10,6 @@ h1{
     padding: 0%;
 }
 
-.hero-btn{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    }
-
 .backdrop{
   position: fixed;
   left: 0px;
@@ -45,6 +29,11 @@ h1{
   border-radius: 4px; 
   top: 50%;
   left: 50%;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
  .backdrop.is-hidden{
@@ -58,6 +47,10 @@ h1{
   background-color: #FFFFFF;
   border: 1px;
   border-color: currentColor;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 90%;
+    }
 }
 
 .modal__h{
@@ -69,6 +62,12 @@ h1{
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  @media screen and (max-width: 480px) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .modal__list{
@@ -93,6 +92,11 @@ h1{
   color: #757575;
   margin-top: 10px;
   margin-bottom: 4px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 14px;
+    }
 }
 
 .modal__button{
@@ -124,6 +128,11 @@ h1{
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  @media screen and (max-width: 480px) {
+    width: 370px;
+    height: 40px;
+    }
 }
 
 .modal__text__input{
@@ -133,6 +142,11 @@ h1{
   top: 518px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  
+  @media screen and (max-width: 480px) {
+    width: 370px;
+    height: 120px;  
+  }
 }
 
 .modal__input:hover{
@@ -153,6 +167,10 @@ h1{
 .modal__checkbox{
   display: flex;
   gap: 4px;
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 30px;
+  }
 }
 
 .checkbox{
@@ -163,15 +181,27 @@ h1{
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+
+  @media screen and (max-width: 480px) {
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    }
 }
 
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/Imgsss.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Imgsss.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
+    
+    @media screen and (max-width: 480px) {
+      height: 400px;
+      padding-top: 118px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/imgsss2.png);
+    }
 }
 
 .hero__main {
@@ -182,7 +212,26 @@ h1{
 }
 
 .hero__title {
-    margin: 0 0 30px;
+    width: 696px;
+    height: 120px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    
+    @media screen and (max-width: 480px) {
+      width: 360px;
+      height: 84px; 
+      font-size: 26px;
+      line-height: 42px;
+      margin-bottom: 30px;
+    }
 }
 
 .hero__btn {
@@ -193,4 +242,5 @@ h1{
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+    border-radius:  4px;
 }
