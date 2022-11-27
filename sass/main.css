@@ -375,7 +375,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .modal {
-    width: 420px;
+    width: 400px;
     height: 609px;
   }
 }
@@ -476,7 +476,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .modal__input {
-    width: 340px;
+    width: 320px;
     height: 40px;
   }
 }
@@ -491,7 +491,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .modal__text__input {
-    width: 340px;
+    width: 320px;
     height: 120px;
   }
 }
@@ -535,6 +535,10 @@ h1 {
     font-size: 12px;
     line-height: 14px;
   }
+}
+
+.modal__link {
+  color: #188CE8;
 }
 
 .hero {

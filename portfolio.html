@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
       
         <div class="header__main">
           <a href="index.html" class="header__logo">
@@ -41,6 +41,36 @@
             <a class="contacts__link" href=tel:+380961111111 >+38 096 111 11 11</a>
           </div>
       </div>
+  <nav class="header__nav">
+            
+            <button data-menu-button class="header__btn" type="button">
+            <svg class="header__icon">
+                <use class="header__icon-menu" href="./img/sprite.svg#menu"></use>
+                <use class="header__icon-cross" href="./img/sprite.svg#cross"></use>
+            </svg>
+            </button>
+
+        <div data-menu class="header__pages">
+          <ul>
+            <li class="header__page"><a class="header__titles" href="#">Студія</a></li>
+            <li class="header__page"><a class="header__titles" href="./portfolio.html">Портфоліо</a></li>
+            <li class="header__page"><a class="header__titles" href="#">Контакти</a></li>
+          </ul>
+            
+           <ul class="header__links">
+             <li><a class="header__link" href=tel:+380961111111 >+38 096 111 11 11</a></li>
+            <li><a class="header__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+           </ul>
+
+           <ul class="header__networks">
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Linkedi n</li>
+           </ul>
+        </div>
+
+       </nav>
     </header>
 
 <main>
