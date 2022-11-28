@@ -1,7 +1,11 @@
 .particular{
   padding-top: 94px;
   padding-bottom: 94px;
-  display: none;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .particular__list {
@@ -9,6 +13,11 @@
   flex-direction: row;
   gap: 30px;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .particular__description {
@@ -24,6 +33,17 @@
 
 .particular__item{
   width: 270px;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    height: 120px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 136px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .particular__item::before{
@@ -38,21 +58,21 @@ margin-bottom: 30px;
 }
 
 .particular__item:nth-child(1)::before{
-background-image: url(./img/antenna\ 1еее.png);
+background-image: url(/img/antenna\ 1еее.png);
 background-size: 70px 70px;
 }
 
 .particular__item:nth-child(2)::before{
-background-image: url(./img/clock\ 1ввв.png);
+background-image: url(/img/clock\ 1ввв.png);
 background-size: 70px 70px;
 }
 
 .particular__item:nth-child(3)::before{
-background-image: url(./img/diagram\ 1ннн.png);
+background-image: url(/img/diagram\ 1ннн.png);
 background-size: 70px 70px;
 }
 
 .particular__item:nth-child(4)::before{
-background-image: url(./img/astronaut\ 1.png);
+background-image: url(/img/astronaut\ 1.png);
 background-size: 70px 70px;
 }
