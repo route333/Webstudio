@@ -643,7 +643,7 @@ h1 {
 @media screen and (max-width: 480px) {
   .team__group {
     display: block;
-    width: 450px;
+    width: 400px;
     height: 622px;
     margin-left: auto;
     margin-right: auto;
@@ -791,7 +791,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .particular__item {
-    width: 420px;
+    width: 400px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -842,7 +842,6 @@ h1 {
   margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
-  display: none;
 }
 
 .clientage__title {
