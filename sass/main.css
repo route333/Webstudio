@@ -608,6 +608,14 @@ h1 {
   margin-bottom: 50px;
   padding-top: 94px;
 }
+@media screen and (max-width: 480px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
 
 .team__members {
   padding-top: 80px;
@@ -616,11 +624,15 @@ h1 {
   top: 1449px;
   padding: 0 215px;
 }
+@media screen and (max-width: 480px) {
+  .team__members {
+    padding: 0%;
+  }
+}
 
 .team {
   padding-bottom: 94px;
   background-color: #F5F4FA;
-  display: none;
 }
 
 .team__group {
@@ -628,11 +640,25 @@ h1 {
   gap: 30px;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .team__group {
+    display: block;
+    width: 450px;
+    height: 622px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .team__list {
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 480px) {
+  .team__list {
+    margin-bottom: 30px;
+  }
 }
 
 .team__img {
@@ -765,7 +791,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .particular__item {
-    width: 450px;
+    width: 420px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
