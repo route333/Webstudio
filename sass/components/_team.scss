@@ -31,6 +31,11 @@
 .team{
   padding-bottom: 94px;
   background-color: #F5F4FA;
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    height: 2761px;
+  }
 }
 
 .team__group {
@@ -38,12 +43,13 @@
   gap: 30px;
   justify-content: center;
 
+
   @media screen and (max-width: 480px) {
-    display: block;
     width: 400px;
     height: 622px;
     margin-left: auto;
     margin-right: auto;
+    display: block;
   }
 }
 

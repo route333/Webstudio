@@ -634,6 +634,12 @@ h1 {
   padding-bottom: 94px;
   background-color: #F5F4FA;
 }
+@media screen and (max-width: 480px) {
+  .team {
+    width: 480px;
+    height: 2761px;
+  }
+}
 
 .team__group {
   display: flex;
@@ -642,11 +648,11 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .team__group {
-    display: block;
     width: 400px;
     height: 622px;
     margin-left: auto;
     margin-right: auto;
+    display: block;
   }
 }
 
@@ -836,6 +842,12 @@ h1 {
   display: flex;
   gap: 30px;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .clientage__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .clientage {
