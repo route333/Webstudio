@@ -4,7 +4,15 @@ footer{
   background: #2F303A;
   display: flex;
   padding-left: 215px;
-  display: none;
+  
+  @media screen and (max-width: 480px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    width: 480px;
+    height: 603px;
+  }
 }
 
 .footer {
@@ -25,17 +33,27 @@ footer{
   color: #2196F3;
 }
 
- .clr{
+.footer__list{
   color: rgba(255, 255, 255, 0.6);
- }
+}
 
- .pp{
+.footer__item{
+  @media screen and (max-width: 480px) {
+    padding-top: 15px;
+  }
+}
+
+.footer__adress{
   color: #FFFFFF;
- }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 20px;
+  }
+}
 
 .footer-mail{
   color: rgba(255, 255, 255, 0.6);
- }
+}
 
 .network__title{
   font-weight: 700;
@@ -44,15 +62,25 @@ footer{
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
- }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+  }
+}
 
 .networks__list{
   display: flex;
   gap: 10px;
- }
+  
+  
+  @media screen and (max-width: 480px) {
+    padding-top: 20px;
+    justify-content: center;
+  }
+}
 
  .networks svg{
-  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
+   transition: all 1s cubic-bezier(0,-0.55,1,1.88);
   fill: #AFB1B8;
 }
 
@@ -79,11 +107,20 @@ footer{
   text-transform: uppercase;
   color: #FFFFFF;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
 }
 
 .subscribe__list{
   display: flex;
   gap: 10px;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
 }
 
 .subscribe__input{
@@ -93,6 +130,12 @@ footer{
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: #2F303A;
+
+  @media screen and (max-width: 480px) {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
  }
 
 .subscribe__btn{

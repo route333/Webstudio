@@ -241,7 +241,16 @@ footer {
   background: #2F303A;
   display: flex;
   padding-left: 215px;
-  display: none;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    width: 480px;
+    height: 603px;
+  }
 }
 
 .footer {
@@ -262,12 +271,23 @@ footer {
   color: #2196F3;
 }
 
-.clr {
+.footer__list {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.pp {
+@media screen and (max-width: 480px) {
+  .footer__item {
+    padding-top: 15px;
+  }
+}
+
+.footer__adress {
   color: #FFFFFF;
+}
+@media screen and (max-width: 480px) {
+  .footer__adress {
+    padding-top: 20px;
+  }
 }
 
 .footer-mail {
@@ -282,10 +302,21 @@ footer {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (max-width: 480px) {
+  .network__title {
+    padding-top: 60px;
+  }
+}
 
 .networks__list {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 480px) {
+  .networks__list {
+    padding-top: 20px;
+    justify-content: center;
+  }
 }
 
 .networks svg {
@@ -315,10 +346,21 @@ footer {
   color: #FFFFFF;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .subscribe__title {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
 
 .subscribe__list {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 480px) {
+  .subscribe__list {
+    display: block;
+  }
 }
 
 .subscribe__input {
@@ -328,6 +370,13 @@ footer {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: #2F303A;
+}
+@media screen and (max-width: 480px) {
+  .subscribe__input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe__btn {
@@ -715,7 +764,6 @@ h1 {
   gap: 30px;
   justify-content: center;
   padding-bottom: 94px;
-  display: none;
 }
 @media screen and (max-width: 768px) {
   .pic__group {
@@ -726,7 +774,13 @@ h1 {
 .pic__title {
   display: flex;
   justify-content: center;
-  display: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 .pic__img {
@@ -797,7 +851,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .particular__item {
-    width: 100%;
+    width: 400px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -819,22 +873,22 @@ h1 {
 }
 
 .particular__item:nth-child(1)::before {
-  background-image: url(../../../Webstudio/img/antenna\ 1еее.png);
+  background-image: url(../../img/antenna\ 1еее.png);
   background-size: 70px 70px;
 }
 
 .particular__item:nth-child(2)::before {
-  background-image: url(../../../Webstudio/img/clock\ 1ввв.png);
+  background-image: url(../../img/clock\ 1ввв.png);
   background-size: 70px 70px;
 }
 
 .particular__item:nth-child(3)::before {
-  background-image: url(../../../Webstudio/img/diagram\ 1ннн.png);
+  background-image: url(../../img/diagram\ 1ннн.png);
   background-size: 70px 70px;
 }
 
 .particular__item:nth-child(4)::before {
-  background-image: url(../../../Webstudio/img/astronaut\ 1.png);
+  background-image: url(../../img/astronaut\ 1.png);
   background-size: 70px 70px;
 }
 
