@@ -33,6 +33,7 @@ title {
   justify-content: space-between;
   gap: 10px;
   position: relative;
+  border: #000 solid 1px;
 }
 
 .header__main {
@@ -248,7 +249,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 0%;
-    width: 480px;
     height: 603px;
   }
 }
@@ -373,7 +373,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .subscribe__input {
-    width: 400px;
+    width: 80%;
     height: 50px;
     margin-bottom: 20px;
   }

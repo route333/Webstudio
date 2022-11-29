@@ -1,7 +1,10 @@
 .posters__item{
-  position: relative;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
+
+  @media screen and (min-width: 500px) {
+    position: relative;
+  }
 }
 
 .posters__item::before{
@@ -22,6 +25,10 @@
 
 .posters__hvr{
    position: relative;
+
+   @media screen and (min-width: 700px) {
+    position: relative;
+  }
 }
 
 .posters__hvr{

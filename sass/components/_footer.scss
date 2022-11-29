@@ -10,7 +10,6 @@ footer{
     width: 100%;
     text-align: center;
     padding: 0%;
-    width: 480px;
     height: 603px;
   }
 }
@@ -132,7 +131,7 @@ footer{
   background: #2F303A;
 
   @media screen and (max-width: 480px) {
-    width: 400px;
+    width: 80%;
     height: 50px;
     margin-bottom: 20px;
   }
