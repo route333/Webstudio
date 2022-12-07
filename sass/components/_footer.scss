@@ -3,7 +3,7 @@ footer{
   align-self: start;
   background: #2F303A;
   display: flex;
-  padding-left: 215px;
+  justify-content: center;
   
   @media screen and (max-width: 480px) {
     display: block;
@@ -11,6 +11,11 @@ footer{
     text-align: center;
     padding: 0%;
     height: 603px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 463px;
   }
 }
 
@@ -54,6 +59,13 @@ footer{
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer__networks{
+  @media screen and (max-width: 768px) {
+    text-align: right;
+    justify-content: center;
+  }
+}
+
 .network__title{
   font-weight: 700;
   font-size: 14px;
@@ -69,7 +81,8 @@ footer{
 
 .networks__list{
   display: flex;
-  gap: 10px;
+  gap: 25px;
+  margin-top: 20px;
   
   
   @media screen and (max-width: 480px) {
@@ -84,19 +97,8 @@ footer{
 }
 
 .networks:hover svg{
-  fill:#FFFFFF;
-}
-
-.networks svg .icon-background{
-  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
-  fill: rgba(255, 255, 255, 0.1);;
-}
-
-.networks:hover svg .icon-background{
   fill:#2196F3;
 }
-
-
 
 .subscribe__title{
   font-weight: 700;
@@ -146,4 +148,15 @@ footer{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid #2196F3;
   border-radius: 4px;
+ }
+
+ .subscribe__svg{
+  fill: #FFFFFF;
+  width: 25px;
+  height: 25px;
+ }
+
+ .network__svg{
+  height: 25px;
+  width: 25px;
  }

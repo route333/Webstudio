@@ -12,6 +12,11 @@ h1, h3, h2, p {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto";
   padding: 0;
@@ -26,19 +31,53 @@ title {
   padding-bottom: 50px;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .header {
+  position: relative;
+  border: #000 solid 1px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 10px 10px;
+  }
+}
+
+header .container {
   padding: 24px 20px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  position: relative;
-  border: #000 solid 1px;
 }
 
 .header__main {
   display: flex;
   align-items: center;
   gap: 93px;
+}
+@media screen and (min-width: 768px) {
+  .header__main {
+    gap: 0;
+  }
 }
 
 .header__logo {
@@ -49,6 +88,11 @@ title {
   letter-spacing: 0.03em;
   color: #000;
 }
+@media screen and (min-width: 748px) {
+  .header__logo {
+    margin-right: 80px;
+  }
+}
 
 .header__logo span {
   color: #2196F3;
@@ -58,9 +102,14 @@ title {
   display: flex;
   gap: 54px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .nav__list {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    gap: 55px;
   }
 }
 
@@ -90,6 +139,11 @@ title {
   transform: scaleX(0);
   transition: opacity 250ms cubic-bezier(1, -0.97, 0, -0.01) 250ms, transform 250ms cubic-bezier(1, -0.97, 0, -0.01) 250ms;
 }
+@media screen and (min-width: 748px) {
+  .nav__link:after {
+    top: 60px;
+  }
+}
 
 .nav__link:hover:after {
   opacity: 1;
@@ -100,21 +154,28 @@ title {
   color: #2196F3;
 }
 
-.header__contacts {
-  display: flex;
+.contacts {
+  display: none;
   align-items: center;
   gap: 30px;
 }
-@media screen and (max-width: 600px) {
-  .header__contacts {
-    display: none;
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    padding-top: 15px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
   }
 }
 
-.contacts__group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+@media screen and (min-width: 768px) {
+  .header__contacts-svg {
+    display: none;
+  }
 }
 
 .contacts__link {
@@ -240,7 +301,7 @@ footer {
   align-self: start;
   background: #2F303A;
   display: flex;
-  padding-left: 215px;
+  justify-content: center;
 }
 @media screen and (max-width: 480px) {
   footer {
@@ -249,6 +310,12 @@ footer {
     text-align: center;
     padding: 0%;
     height: 603px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    width: 768px;
+    height: 463px;
   }
 }
 
@@ -293,6 +360,13 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+  .footer__networks {
+    text-align: right;
+    justify-content: center;
+  }
+}
+
 .network__title {
   font-weight: 700;
   font-size: 14px;
@@ -309,7 +383,8 @@ footer {
 
 .networks__list {
   display: flex;
-  gap: 10px;
+  gap: 25px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 480px) {
   .networks__list {
@@ -324,15 +399,6 @@ footer {
 }
 
 .networks:hover svg {
-  fill: #FFFFFF;
-}
-
-.networks svg .icon-background {
-  transition: all 1s cubic-bezier(0, -0.55, 1, 1.88);
-  fill: rgba(255, 255, 255, 0.1);
-}
-
-.networks:hover svg .icon-background {
   fill: #2196F3;
 }
 
@@ -387,6 +453,17 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid #2196F3;
   border-radius: 4px;
+}
+
+.subscribe__svg {
+  fill: #FFFFFF;
+  width: 25px;
+  height: 25px;
+}
+
+.network__svg {
+  height: 25px;
+  width: 25px;
 }
 
 .hero__btn {

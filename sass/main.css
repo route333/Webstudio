@@ -13,6 +13,11 @@ h1, h3, h2, p {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto";
   padding: 0;
@@ -27,19 +32,53 @@ title {
   padding-bottom: 50px;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .header {
+  position: relative;
+  border: #000 solid 1px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 10px 10px;
+  }
+}
+
+header .container {
   padding: 24px 20px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  position: relative;
-  border: #000 solid 1px;
 }
 
 .header__main {
   display: flex;
   align-items: center;
   gap: 93px;
+}
+@media screen and (min-width: 768px) {
+  .header__main {
+    gap: 0;
+  }
 }
 
 .header__logo {
@@ -50,6 +89,11 @@ title {
   letter-spacing: 0.03em;
   color: #000;
 }
+@media screen and (min-width: 748px) {
+  .header__logo {
+    margin-right: 80px;
+  }
+}
 
 .header__logo span {
   color: #2196F3;
@@ -59,9 +103,14 @@ title {
   display: flex;
   gap: 54px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .nav__list {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    gap: 55px;
   }
 }
 
@@ -91,6 +140,11 @@ title {
   transform: scaleX(0);
   transition: opacity 250ms cubic-bezier(1, -0.97, 0, -0.01) 250ms, transform 250ms cubic-bezier(1, -0.97, 0, -0.01) 250ms;
 }
+@media screen and (min-width: 748px) {
+  .nav__link:after {
+    top: 60px;
+  }
+}
 
 .nav__link:hover:after {
   opacity: 1;
@@ -101,21 +155,28 @@ title {
   color: #2196F3;
 }
 
-.header__contacts {
-  display: flex;
+.contacts {
+  display: none;
   align-items: center;
   gap: 30px;
 }
-@media screen and (max-width: 600px) {
-  .header__contacts {
-    display: none;
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    padding-top: 15px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
   }
 }
 
-.contacts__group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+@media screen and (min-width: 768px) {
+  .header__contacts-svg {
+    display: none;
+  }
 }
 
 .contacts__link {
@@ -241,7 +302,7 @@ footer {
   align-self: start;
   background: #2F303A;
   display: flex;
-  padding-left: 215px;
+  justify-content: center;
 }
 @media screen and (max-width: 480px) {
   footer {
@@ -250,6 +311,12 @@ footer {
     text-align: center;
     padding: 0%;
     height: 603px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    width: 768px;
+    height: 463px;
   }
 }
 
@@ -294,6 +361,13 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+  .footer__networks {
+    text-align: right;
+    justify-content: center;
+  }
+}
+
 .network__title {
   font-weight: 700;
   font-size: 14px;
@@ -310,7 +384,8 @@ footer {
 
 .networks__list {
   display: flex;
-  gap: 10px;
+  gap: 25px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 480px) {
   .networks__list {
@@ -325,15 +400,6 @@ footer {
 }
 
 .networks:hover svg {
-  fill: #FFFFFF;
-}
-
-.networks svg .icon-background {
-  transition: all 1s cubic-bezier(0, -0.55, 1, 1.88);
-  fill: rgba(255, 255, 255, 0.1);
-}
-
-.networks:hover svg .icon-background {
   fill: #2196F3;
 }
 
@@ -390,6 +456,17 @@ footer {
   border-radius: 4px;
 }
 
+.subscribe__svg {
+  fill: #FFFFFF;
+  width: 25px;
+  height: 25px;
+}
+
+.network__svg {
+  height: 25px;
+  width: 25px;
+}
+
 h1 {
   font-weight: 900;
   font-size: 44px;
@@ -428,6 +505,12 @@ h1 {
     height: 609px;
   }
 }
+@media screen and (max-width: 748px) {
+  .modal {
+    width: 400px;
+    height: 609px;
+  }
+}
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -454,9 +537,10 @@ h1 {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
   color: #212121;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .modal__h {
     font-weight: 700;
     font-size: 20px;
@@ -550,20 +634,11 @@ h1 {
   border-radius: 4px;
 }
 
-.modal-input {
-  width: 448px;
-  height: 120px;
-  left: 576px;
-  top: 518px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
 .modal__checkbox {
   display: flex;
   gap: 4px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .modal__checkbox {
     padding-bottom: 30px;
   }
@@ -605,6 +680,14 @@ h1 {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/imgsss2.png);
   }
 }
+@media screen and (max-width: 748px) {
+  .hero {
+    height: 50px;
+    padding-top: 128px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header.img.png);
+  }
+}
 
 .hero__main {
   display: flex;
@@ -632,7 +715,14 @@ h1 {
     height: 84px;
     font-size: 26px;
     line-height: 42px;
-    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 748px) {
+  .hero__title {
+    width: 400px;
+    height: 124px;
+    font-size: 30px;
+    line-height: 46px;
   }
 }
 
@@ -666,49 +756,23 @@ h1 {
   }
 }
 
-.team__members {
-  padding-top: 80px;
-  text-align: center;
-  height: 648px;
-  top: 1449px;
-  padding: 0 215px;
-}
-@media screen and (max-width: 480px) {
-  .team__members {
-    padding: 0%;
-  }
-}
-
 .team {
   padding-bottom: 94px;
   background-color: #F5F4FA;
+  display: flex;
 }
 @media screen and (max-width: 480px) {
   .team {
     width: 100%;
-    height: 2761px;
-  }
-}
-
-.team__group {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-@media screen and (max-width: 480px) {
-  .team__group {
-    width: 400px;
-    height: 622px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    height: 2100px;
   }
 }
 
 .team__list {
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
   .team__list {
@@ -716,28 +780,39 @@ h1 {
   }
 }
 
+.team__item {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 428px;
+}
+
 .team__img {
   width: 100%;
 }
 
 .team__name {
-  padding: 10px 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  margin: 0 0 10px;
+  text-align: center;
 }
 
 .team__position {
   color: #757575;
-  padding: 0 0 32px;
+  padding-bottom: 28px;
+  text-align: center;
+  margin: 0%;
 }
 
 .team__network-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  padding: 0 0 32px;
+  gap: 30px;
+  padding-bottom: 32px;
 }
 
 .team__networks svg {
@@ -746,16 +821,12 @@ h1 {
 }
 
 .team__networks:hover svg {
-  fill: #FFFFFF;
-}
-
-.team__networks svg .icon-background {
-  transition: all 1s cubic-bezier(0, -0.55, 1, 1.88);
-  fill: rgba(255, 255, 255, 0.1);
-}
-
-.team__networks:hover svg .icon-background {
   fill: #2196F3;
+}
+
+.team__svg {
+  height: 25px;
+  width: 25px;
 }
 
 .pic__group {
@@ -835,8 +906,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   .particular__list {
-    display: block;
-    text-align: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -902,15 +972,17 @@ h1 {
   gap: 30px;
   justify-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .clientage__list {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .clientage__list {
+    flex-wrap: wrap;
+  }
+}
 .clientage {
-  margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -936,8 +1008,23 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  height: 50px;
+  width: 50px;
+  transition: all 1s cubic-bezier(0, -0.55, 1, 1.88);
+  fill: #AFB1B8;
 }
 
-.clientage__item:hover {
+.clientage__svg-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 50px;
+  width: 80px;
+  transition: all 1s cubic-bezier(0, -0.55, 1, 1.88);
+  fill: #AFB1B8;
+}
+
+.clientage svg:hover {
   fill: #2196F3;
 }/*# sourceMappingURL=main.css.map */

@@ -2,15 +2,21 @@
   display: flex;
   gap: 30px;
   justify-content: center;
-
-  @media screen and (max-width: 480px) {
+  
+  @media screen and (min-width: 480px) {
     flex-wrap: wrap;
-    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+   
   }
 }
 
 .clientage{ 
-  margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -36,9 +42,24 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  height: 50px;
+  width: 50px;
+  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
+  fill: #AFB1B8;
 }
 
-.clientage__item:hover{
+.clientage__svg-2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 50px;
+  width: 80px;
+  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
+  fill: #AFB1B8;
+}
+
+.clientage svg:hover{
   fill: #2196F3;
 }
 

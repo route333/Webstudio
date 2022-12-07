@@ -16,51 +16,34 @@
   }
 }
 
-.team__members {
-  padding-top: 80px;
-  text-align: center;
-  height: 648px;
-  top: 1449px;
-  padding: 0 215px;
-
-  @media screen and (max-width: 480px) {
-    padding: 0%;
-  }
-}
-
 .team{
   padding-bottom: 94px;
   background-color: #F5F4FA;
+  display: flex;
 
   @media screen and (max-width: 480px) {
     width: 100%;
-    height: 2761px;
-  }
-}
-
-.team__group {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-
-
-  @media screen and (max-width: 480px) {
-    width: 400px;
-    height: 622px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    height: 2100px;
   }
 }
 
 .team__list {
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 480px) {
     margin-bottom: 30px;
   }
+}
+
+.team__item{
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 428px;
 }
 
 .team__img {
@@ -68,23 +51,26 @@
 }
 
 .team__name {
-  padding: 10px 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  margin: 0 0 10px;
+  text-align: center;
 }
 
 .team__position{
   color: #757575;
-  padding: 0 0 32px;
+  padding-bottom: 28px;
+  text-align: center;
+  margin: 0%;
 }
 
 .team__network-list{
   display: flex;
   justify-content: center;
-  gap: 10px;
-  padding: 0 0 32px;
+  gap: 30px;
+  padding-bottom: 32px;
 }
 
 .team__networks svg{
@@ -93,14 +79,10 @@
 }
 
 .team__networks:hover svg{
-  fill:#FFFFFF;
-}
-
-.team__networks svg .icon-background{
-  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
-  fill: rgba(255, 255, 255, 0.1);;
-}
-
-.team__networks:hover svg .icon-background{
   fill:#2196F3;
+}
+
+.team__svg{
+  height: 25px;
+  width: 25px;
 }

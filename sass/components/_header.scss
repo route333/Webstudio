@@ -1,16 +1,26 @@
 .header {
+  position: relative;
+  border: #000 solid 1px;
+  
+  @media screen and (min-width: 768px) {
+    padding: 10px 10px;
+  }
+}
+
+header .container{
   padding: 24px 20px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  position: relative;
-  border: #000 solid 1px;
 }
 
 .header__main {
   display: flex;
   align-items: center;
   gap: 93px;
+
+  @media screen and (min-width: 768px) {
+    gap: 0;
+  }
 }
 
 .header__logo {
@@ -20,6 +30,10 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #000;
+
+  @media screen and (min-width: 748px) {
+    margin-right: 80px;
+  }
 }
 
 .header__logo span {
@@ -30,8 +44,12 @@
   display: flex;
   gap: 54px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
   display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 55px;
   }
 }
 
@@ -60,6 +78,9 @@
     opacity: 0;
     transform: scaleX(0);
     transition: opacity 250ms cubic-bezier(1,-0.97,0,-0.01) 250ms , transform 250ms cubic-bezier(1,-0.97,0,-0.01) 250ms;
+    @media screen and (min-width: 748px) {
+    top: 60px;
+    }
 }
 
 .nav__link:hover:after{
@@ -71,20 +92,26 @@
   color: #2196F3;
 }
 
-.header__contacts {
-  display: flex;
+.contacts {
+  display: none;
   align-items: center;
   gap: 30px;
 
-  @media screen and (max-width: 600px) {
-  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 15px;
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
-.contacts__group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.header__contacts-svg{
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .contacts__link {
