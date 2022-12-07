@@ -858,6 +858,11 @@ h1 {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .pic__title {
+    display: none;
+  }
+}
 
 .pic__img {
   width: 100%;
