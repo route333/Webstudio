@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Webstudio",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Webstudio"
+	}
+}

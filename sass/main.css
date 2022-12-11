@@ -91,7 +91,7 @@ header .container {
 }
 @media screen and (min-width: 748px) {
   .header__logo {
-    margin-right: 80px;
+    margin-right: 50px;
   }
 }
 
@@ -140,9 +140,9 @@ header .container {
   transform: scaleX(0);
   transition: opacity 250ms cubic-bezier(1, -0.97, 0, -0.01) 250ms, transform 250ms cubic-bezier(1, -0.97, 0, -0.01) 250ms;
 }
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 768px) {
   .nav__link:after {
-    top: 60px;
+    top: 76px;
   }
 }
 
@@ -164,7 +164,7 @@ header .container {
   .contacts {
     display: block;
     padding-top: 15px;
-    margin-left: 88px;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -172,10 +172,22 @@ header .container {
     display: flex;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .header__contacts-svg {
+@media screen and (max-width: 480px) {
+  .contacts {
     display: none;
+  }
+}
+
+.header__contacts-svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .header__contacts-svg {
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -200,7 +212,7 @@ header .container {
   width: 40px;
   height: 40px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .header__icon {
     display: none;
   }
@@ -298,31 +310,21 @@ header .container {
 }
 
 footer {
-  gap: 75px;
-  align-self: start;
   background: #2F303A;
-  display: flex;
-  justify-content: center;
-}
-@media screen and (max-width: 480px) {
-  footer {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0%;
-    height: 603px;
-  }
-}
-@media screen and (max-width: 768px) {
-  footer {
-    width: 768px;
-    height: 463px;
-  }
-}
-
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  footer .container {
+    display: block;
+  }
 }
 
 .footer__logo {
@@ -342,7 +344,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .footer__item {
     padding-top: 15px;
   }
@@ -351,7 +353,7 @@ footer {
 .footer__adress {
   color: #FFFFFF;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .footer__adress {
     padding-top: 20px;
   }
@@ -361,10 +363,14 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer__networks {
-    text-align: right;
-    justify-content: center;
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__networks {
+    margin-left: 70px;
   }
 }
 
@@ -382,16 +388,26 @@ footer {
   }
 }
 
-.networks__list {
+.network__list {
   display: flex;
-  gap: 25px;
+  gap: 10px;
   margin-top: 20px;
 }
 @media screen and (max-width: 480px) {
-  .networks__list {
-    padding-top: 20px;
+  .network__list {
     justify-content: center;
   }
+}
+
+.networks {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
 }
 
 .networks svg {
@@ -401,6 +417,12 @@ footer {
 
 .networks:hover svg {
   fill: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding-top: 60px;
+  }
 }
 
 .subscribe__title {
@@ -418,12 +440,22 @@ footer {
     padding-bottom: 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .subscribe__title {
+    padding-bottom: 20px;
+  }
+}
 
 .subscribe__list {
   display: flex;
   gap: 10px;
 }
 @media screen and (max-width: 480px) {
+  .subscribe__list {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
   .subscribe__list {
     display: block;
   }
@@ -439,8 +471,13 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .subscribe__input {
-    width: 80%;
+    width: 90%;
     height: 50px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subscribe__input {
     margin-bottom: 20px;
   }
 }
@@ -764,20 +801,15 @@ h1 {
 @media screen and (max-width: 480px) {
   .team {
     width: 100%;
-    height: 2100px;
+    padding-bottom: 30px;
   }
 }
 
 .team__list {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 480px) {
-  .team__list {
-    margin-bottom: 30px;
-  }
 }
 
 .team__item {
@@ -785,7 +817,6 @@ h1 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  height: 428px;
 }
 
 .team__img {
@@ -836,7 +867,7 @@ h1 {
   justify-content: center;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .pic__group {
     display: none;
   }
@@ -853,12 +884,7 @@ h1 {
   margin-bottom: 50px;
   padding-top: 94px;
 }
-@media screen and (max-width: 480px) {
-  .pic__title {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .pic__title {
     display: none;
   }
@@ -909,7 +935,7 @@ h1 {
   gap: 30px;
   justify-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .particular__list {
     flex-wrap: wrap;
   }
@@ -1006,6 +1032,11 @@ h1 {
   border-radius: 4px;
   height: 90px;
   width: 170px;
+}
+@media screen and (min-width: 480px) {
+  .clientage__item {
+    width: 210px;
+  }
 }
 
 .clientage__svg {

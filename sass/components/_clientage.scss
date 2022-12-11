@@ -35,6 +35,10 @@
   border-radius: 4px;
   height: 90px;
   width: 170px;
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
 }
 
 .clientage__svg{

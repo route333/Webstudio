@@ -1,27 +1,19 @@
 footer{
-  gap:75px;
-  align-self: start;
   background: #2F303A;
-  display: flex;
-  justify-content: center;
-  
-  @media screen and (max-width: 480px) {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0%;
-    height: 603px;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 768px;
-    height: 463px;
-  }
-}
-
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
+}
+
+footer .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
 }
 
 .footer__logo {
@@ -42,7 +34,7 @@ footer{
 }
 
 .footer__item{
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     padding-top: 15px;
   }
 }
@@ -50,7 +42,7 @@ footer{
 .footer__adress{
   color: #FFFFFF;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     padding-top: 20px;
   }
 }
@@ -60,10 +52,13 @@ footer{
 }
 
 .footer__networks{
-  @media screen and (max-width: 768px) {
-    text-align: right;
-    justify-content: center;
-  }
+ @media screen and (min-width: 768px) {
+  margin-left: 165px;
+ }
+
+ @media screen and (min-width: 1200px) {
+  margin-left: 70px;
+ }
 }
 
 .network__title{
@@ -79,25 +74,41 @@ footer{
   }
 }
 
-.networks__list{
+.network__list{
   display: flex;
-  gap: 25px;
+  gap: 10px;
   margin-top: 20px;
   
   
   @media screen and (max-width: 480px) {
-    padding-top: 20px;
     justify-content: center;
   }
 }
 
- .networks svg{
-   transition: all 1s cubic-bezier(0,-0.55,1,1.88);
+.networks{
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.networks svg{
+  transition: all 1s cubic-bezier(0,-0.55,1,1.88);
   fill: #AFB1B8;
 }
 
 .networks:hover svg{
   fill:#2196F3;
+}
+
+.subscribe{
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
 }
 
 .subscribe__title{
@@ -108,9 +119,13 @@ footer{
   text-transform: uppercase;
   color: #FFFFFF;
   justify-content: center;
-
+  
   @media screen and (max-width: 480px) {
     padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
     padding-bottom: 20px;
   }
 }
@@ -118,8 +133,12 @@ footer{
 .subscribe__list{
   display: flex;
   gap: 10px;
-
+  
   @media screen and (max-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
     display: block;
   }
 }
@@ -133,8 +152,12 @@ footer{
   background: #2F303A;
 
   @media screen and (max-width: 480px) {
-    width: 80%;
+    width: 90%;
     height: 50px;
+    padding-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
     margin-bottom: 20px;
   }
  }
