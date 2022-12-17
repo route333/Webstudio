@@ -703,7 +703,7 @@ h1 {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Imgsss.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img2x/hero-desktop.png);
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -714,7 +714,7 @@ h1 {
   .hero {
     height: 400px;
     padding-top: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/imgsss2.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img2x/hero-mobile.png);
   }
 }
 @media screen and (max-width: 748px) {
@@ -722,7 +722,7 @@ h1 {
     height: 50px;
     padding-top: 128px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header.img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img2x/hero-tablet.png);
   }
 }
 
@@ -1033,7 +1033,12 @@ h1 {
   height: 90px;
   width: 170px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
+  .clientage__item {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 480px) {
   .clientage__item {
     width: 210px;
   }

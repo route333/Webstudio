@@ -189,7 +189,7 @@ h1{
 }
 
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Imgsss.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img2x/hero-desktop.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -199,14 +199,14 @@ h1{
     @media screen and (max-width: 480px) {
       height: 400px;
       padding-top: 118px;
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/imgsss2.png);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img2x/hero-mobile.png);
     }
 
     @media screen and (max-width: 748px) {
       height: 50px;
       padding-top: 128px;
       padding-bottom: 200px;
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header.img.png);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img2x/hero-tablet.png);
     }
 }
 
