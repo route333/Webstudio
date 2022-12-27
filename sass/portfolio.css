@@ -55,6 +55,7 @@ title {
 
 .header {
   position: relative;
+  border: solid 1px #757575;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -532,7 +533,8 @@ footer .container {
 }
 @media screen and (min-width: 1200px) {
   main {
-    margin-top: 165px;
+    margin-top: 94px;
+    margin-bottom: 94px;
   }
 }
 
