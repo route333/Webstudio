@@ -55,7 +55,7 @@ title {
 
 .header {
   position: relative;
-  border: solid 1px #757575;
+  border-bottom: 1px solid #757575;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -161,13 +161,13 @@ header .container {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
-    padding-top: 15px;
-    margin-left: 30px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
+    align-items: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -385,6 +385,12 @@ footer .container {
     padding-top: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .network__title {
+    display: flex;
+    justify-content: left;
+  }
+}
 
 .network__list {
   display: flex;
@@ -419,7 +425,13 @@ footer .container {
 
 @media screen and (min-width: 768px) {
   .subscribe {
-    padding-top: 60px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 0;
+    margin-left: 93px;
   }
 }
 
@@ -430,7 +442,6 @@ footer .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  justify-content: center;
 }
 @media screen and (max-width: 480px) {
   .subscribe__title {
@@ -441,6 +452,12 @@ footer .container {
 @media screen and (min-width: 768px) {
   .subscribe__title {
     padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    display: flex;
+    justify-content: left;
   }
 }
 
@@ -460,7 +477,7 @@ footer .container {
 }
 
 .subscribe__input {
-  width: 380px;
+  width: 358px;
   height: 50px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -489,12 +506,16 @@ footer .container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid #2196F3;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe__svg {
   fill: #FFFFFF;
   width: 25px;
   height: 25px;
+  margin-left: 10px;
 }
 
 .network__svg {

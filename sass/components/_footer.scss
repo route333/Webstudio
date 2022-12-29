@@ -72,6 +72,11 @@ footer .container{
   @media screen and (max-width: 480px) {
     padding-top: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: left;
+  }
 }
 
 .network__list{
@@ -107,7 +112,12 @@ footer .container{
 
 .subscribe{
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 93px;
   }
 }
 
@@ -118,7 +128,6 @@ footer .container{
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  justify-content: center;
   
   @media screen and (max-width: 480px) {
     padding-top: 60px;
@@ -127,6 +136,11 @@ footer .container{
 
   @media screen and (min-width: 768px) {
     padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: left;
   }
 }
 
@@ -144,7 +158,7 @@ footer .container{
 }
 
 .subscribe__input{
-  width: 380px;
+  width: 358px;
   height: 50px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -171,12 +185,16 @@ footer .container{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid #2196F3;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  }
 
  .subscribe__svg{
   fill: #FFFFFF;
   width: 25px;
   height: 25px;
+  margin-left: 10px;
  }
 
  .network__svg{

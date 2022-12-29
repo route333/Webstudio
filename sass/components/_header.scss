@@ -1,6 +1,7 @@
 .header {
   position: relative;
-  border: solid 1px #757575;
+  border-bottom: 1px solid #757575;
+
   
   @media screen and (min-width: 768px) {
     padding: 10px 10px;
@@ -99,12 +100,12 @@ header .container{
 
   @media screen and (min-width: 768px) {
     display: block;
-    padding-top: 15px;
-    margin-left: 30px;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: center;
   }
 
   @media screen and (max-width: 480px) {
